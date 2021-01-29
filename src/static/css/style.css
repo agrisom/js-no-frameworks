@@ -52,3 +52,9 @@ nav li:hover {
 nav a {
     color: white;
 }
+
+nav img {
+    height: 40px;
+    float: left;
+    margin: 5px;
+}
