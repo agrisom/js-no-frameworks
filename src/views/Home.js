@@ -1,11 +1,6 @@
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView {
-    constructor() {
-        super();
-        this.setTitle("Home");
-    }
-
     async getHtml() {
         return `
             <h1>Home Works!</h1>
@@ -21,5 +16,10 @@ export default class extends AbstractView {
                 Phasellus ex sapien, ultrices et lorem eget, venenatis auctor est. Phasellus sapien metus, pretium nec aliquam sed, laoreet ut purus. Nullam vel suscipit nulla. Vestibulum quis scelerisque nisi. Ut lacus lacus, cursus quis est in, pretium lacinia arcu. Sed a lectus at diam placerat ullamcorper in ac urna. Sed aliquam venenatis consectetur. Donec rhoncus, arcu sit amet viverra venenatis, urna orci fermentum ex, nec tincidunt arcu sapien in ipsum. Pellentesque consequat sodales vestibulum. Donec nisi neque, mollis in ultricies vel, condimentum ut justo. Sed eu mauris magna.
             </p>
         `;
+    }
+
+    constructor() {
+        super();
+        this.setTitle("Home");
     }
 }
