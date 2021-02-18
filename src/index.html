@@ -8,15 +8,51 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <nav class="nav">
-            <a href="/" data-link><img src="/assets/logo_TLP_negatiu-01.png" /></a>
-            <ul>
-                <a href="/" data-link><li>Home</li></a>
-                <a href="/users" data-link><li>Users</li></a>
-                <a href="/404" data-link><li>404</li></a>
-            </ul>
-        </nav>
+        <header class="site-header">
+            <div class="burguer-container small toggle-nav">
+                <span class="burguer"></span>
+                <span class="burguer"></span>
+                <span class="burguer"></span>
+            </div>
+            <div class="header-logo">
+                <a href="/" data-link><img alt="TheLittlePot" src="/assets/logo_TLP_negatiu-01.png" class="logo"/></a>
+            </div>
+            <nav id="site-nav" class="site-nav toggle-nav">
+                <span class="close small"></span>
+                <ul>
+                    <li><a href="/" data-link class="active">Co-Working</a></li>
+                    <li><a href="/users" data-link>Courses</a></li>
+                    <li><a href="/thelittlepot" data-link class="cammel-case">The little pot</a></li>
+                    <li><a href="/about" data-link>About</a></li>
+                    <li><a href="/contact" data-link>Contact</a></li>
+                </ul>
+                <div class="actions small">
+                    <a href="/login" data-link class="btn btn-secondary">Log in</a> 
+                    <a href="/signup" data-link class="btn btn-primary">Sign up</a>
+                    <!-- <button class="btn btn-secondary">Log out</button> -->
+                </div>
+            </nav>
+            <div class="actions">
+                <a href="/login" data-link class="btn btn-secondary">Log in</a> 
+                <a href="/signup" data-link class="btn btn-primary">Sign up</a>
+                <!-- <button class="btn btn-secondary">Log out</button> -->
+            </div>
+        </header>
+        
         <div id="app"></div>
-        <script type="module" src="/js/router.js"></script>
+        
+        <div class="footer">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="https://www.instagram.com/the.little.pot" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <script type="module" src="/js/Router.js"></script>
+        <script src="/js/Responsive.js"></script>
     </body>
 </html>
