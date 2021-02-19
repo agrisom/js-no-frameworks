@@ -4,7 +4,7 @@ export default class {
     }
 
     setTitle(title) {
-        document.title = title;
+        document.title = "The Little Pot" + (title ? " - " + title : "");
     }
 
     async getHtml() {

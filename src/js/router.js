@@ -1,7 +1,11 @@
-import UsersView from "/views/Users.js";
-import UserView from "/views/User.js";
+import CoursesView from "/views/Courses.js";
+import CourseView from "/views/Course.js";
 import HomeView from "/views/Home.js";
 import ErrorView from "/views/Error.js";
+import LogInView from "/views/Login.js";
+import SignUpView from "/views/Signup.js";
+import ComponentsView from "/views/Components.js";
+import CatalogView from "/views/Catalog.js";
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -24,8 +28,12 @@ const router = async () => {
         { path: "/error", view: ErrorView },
         { path: "/", view: HomeView },
         { path: "/home", view: HomeView },
-        { path: "/users", view: UsersView },
-        { path: "/user/:id", view: UserView }
+        { path: "/courses", view: CoursesView },
+        { path: "/course/:id", view: CourseView },
+        { path: "/login", view: LogInView },
+        { path: "/signup", view: SignUpView},
+        { path: "/about", view: ComponentsView},
+        { path: "/catalog", view: CatalogView}
     ];
 
     // Test each routes for potential match
@@ -47,6 +55,14 @@ const router = async () => {
 
     const view = new match.route.view(getParams(match));
     document.querySelector("#app").innerHTML = await view.getHtml();
+    document.getElementById("nav-links").childNodes.forEach(ul => {
+        if (ul.nodeName == "LI") {
+            ul.firstChild.classList.remove("active");
+            if(ul.firstChild.href.endsWith(match.route.path)) {
+                ul.firstChild.classList.add("active");
+            }
+        }
+    });
 };
 
 window.addEventListener("popstate", router);
@@ -58,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (closest) {
             e.preventDefault();
             navigateTo(closest.href);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         };
     });
     router();

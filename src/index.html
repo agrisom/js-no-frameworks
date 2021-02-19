@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web App with Vanilla JS</title>
-
+        <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
@@ -19,10 +19,10 @@
             </div>
             <nav id="site-nav" class="site-nav toggle-nav">
                 <span class="close small"></span>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="/" data-link class="active">Co-Working</a></li>
-                    <li><a href="/users" data-link>Courses</a></li>
-                    <li><a href="/thelittlepot" data-link class="cammel-case">The little pot</a></li>
+                    <li><a href="/courses" data-link>Courses</a></li>
+                    <li><a href="/catalog" data-link class="cammel-case">The little pot</a></li>
                     <li><a href="/about" data-link>About</a></li>
                     <li><a href="/contact" data-link>Contact</a></li>
                 </ul>
@@ -42,15 +42,32 @@
         <div id="app"></div>
         
         <div class="footer">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Link 4</a></li>
-                <li><a href="https://www.instagram.com/the.little.pot" target="_blank">Instagram</a></li>
-            </ul>
+            <div class="column-fixed-wrapper">
+                <div class="column-fixed">
+                    <ul>
+                        <li><a href="/" data-link class="active">Co-Working</a></li>
+                        <li><a href="/courses" data-link>Courses</a></li>
+                        <li><a href="/contact" data-link>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column-fixed">
+                    <ul>
+                        <li><a href="/catalog" data-link class="cammel-case">The little pot</a></li>
+                        <li><a href="/about" data-link>About</a></li>
+                    </ul>
+                </div>
+                <div class="column-fixed right">
+                    <select>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>Català</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column-fixed-wrapper">
+                <div class="column-fixed"><img alt="TheLittlePot" src="/assets/logo_TLP-01.png" style="height: 50px;"></div>
+                <div class="column-fixed font-small right">© 2021 TheLittlePot</div>
+            </div>
         </div>
         <script type="module" src="/js/router.js"></script>
         <script src="/js/responsive.js"></script>
