@@ -5,7 +5,8 @@ export default class extends AbstractView {
         return `
             <section>
                 <div class="column">
-                    <h1>Home Works!</h1>
+                    <h1 class="i18nstring" data-message="com.thelittlepot.home.section.2.tile"></h1>
+                    <p class="i18nstring" data-message="com.thelittlepot.home.section.2.content"></p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque laoreet quam, non pharetra nulla pulvinar vel. Nullam varius facilisis porttitor. Donec bibendum dui ac elit malesuada posuere. Morbi faucibus consectetur convallis. Aenean in dui iaculis elit condimentum molestie. Mauris non nunc sed leo blandit luctus non at erat. Sed id imperdiet magna, non fermentum libero. Fusce magna justo, feugiat non consequat eget, luctus sollicitudin sapien. Maecenas mollis, turpis semper fermentum blandit, ex turpis scelerisque tellus, vitae aliquam sapien eros pretium enim. Nam ex ipsum, ornare quis mattis vulputate, sagittis convallis neque. Aenean vel ligula ac velit pharetra molestie ut nec lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac semper neque. Vestibulum faucibus hendrerit arcu ac dictum. Nam dui nisi, hendrerit quis ex nec, faucibus euismod elit. Nam nec lectus non nisl lacinia malesuada sit amet at purus.
 
@@ -17,13 +18,13 @@ export default class extends AbstractView {
 
                         Phasellus ex sapien, ultrices et lorem eget, venenatis auctor est. Phasellus sapien metus, pretium nec aliquam sed, laoreet ut purus. Nullam vel suscipit nulla. Vestibulum quis scelerisque nisi. Ut lacus lacus, cursus quis est in, pretium lacinia arcu. Sed a lectus at diam placerat ullamcorper in ac urna. Sed aliquam venenatis consectetur. Donec rhoncus, arcu sit amet viverra venenatis, urna orci fermentum ex, nec tincidunt arcu sapien in ipsum. Pellentesque consequat sodales vestibulum. Donec nisi neque, mollis in ultricies vel, condimentum ut justo. Sed eu mauris magna.
                     </p>
-                </div>
+                    </div>
             </section>
         `;
     }
 
     constructor() {
         super();
-        this.setTitle();
+        this.setTitle("com.thelittlepot.title.home");
     }
 }

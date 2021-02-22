@@ -1,0 +1,46 @@
+{
+    "com.thelittlepot.title.catalog": "Catálogo",
+    "com.thelittlepot.title.components": "Componentes",
+    "com.thelittlepot.title.course": "Curso",
+    "com.thelittlepot.title.courses": "Cursos",
+    "com.thelittlepot.title.error": "Pagina No Encontrada",
+    "com.thelittlepot.title.home": "",
+    "com.thelittlepot.title.login": "Entrar",
+    "com.thelittlepot.title.signup": "Registro",
+
+    "com.thelittlepot.nav.option.coworking": "Co-Working",
+    "com.thelittlepot.nav.option.courses": "Cursos",
+    "com.thelittlepot.nav.option.tlp": "The Little Pot",
+    "com.thelittlepot.nav.option.about": "Sobre TLP",
+    "com.thelittlepot.nav.option.contact": "Contactar",
+    "com.thelittlepot.nav.option.login": "Entrar",
+    "com.thelittlepot.nav.option.signup": "Registro",
+
+    "com.thelittlepot.home.section.2.tile": "Cabecera de prueba",
+    "com.thelittlepot.home.section.2.content": "Texto de prueba para el cambio de idioma",
+   
+    "com.thelittlepot.login.tile": "Iniciar Sesión",
+    "com.thelittlepot.login.form.email": "Email",
+    "com.thelittlepot.login.form.password": "Contraseña",
+    "com.thelittlepot.login.form.submit": "Entrar",
+    "com.thelittlepot.login.content": "¿No tienes una cuenta? <a href='/signup' data-link>Regístrate</a>",
+    
+    "com.thelittlepot.signup.tile": "Registo",
+    "com.thelittlepot.signup.form.email": "Email",
+    "com.thelittlepot.signup.form.name": "Nombre",
+    "com.thelittlepot.signup.form.surnames": "Apellidos",
+    "com.thelittlepot.signup.form.password": "Contraseña",
+    "com.thelittlepot.signup.form.password2": "Repetir Contraseña",
+    "com.thelittlepot.signup.form.submit": "Registrate",
+    "com.thelittlepot.signup.content": "¿Ya tienes una cuenta? <a href='/login' data-link>Iniciar sesión</a>",
+
+    "com.thelittlepot.courses.alerts": "Alertas",
+    "com.thelittlepot.courses.table.name": "Nom",
+    "com.thelittlepot.courses.table.gender": "Genero",
+    "com.thelittlepot.courses.table.age": "Edad",
+    "com.thelittlepot.courses.table.edit": "Editar",
+
+    "com.thelittlepot.error.404.title": "Vaya!!",
+    "com.thelittlepot.error.404.desc": "No hemos encontrado la página que buscas.<br><a href='/' data-link>Volver al inicio</a>",
+    "com.thelittlepot.error.404.code": "404 Pagina No Encontrada"
+}

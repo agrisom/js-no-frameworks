@@ -6,6 +6,16 @@ import LogInView from "/views/Login.js";
 import SignUpView from "/views/Signup.js";
 import ComponentsView from "/views/Components.js";
 import CatalogView from "/views/Catalog.js";
+import LangService from "/js/LangService.js";
+
+const selectLanguage = lang => {
+    let suportedLanguages = ["en", "ca", "es"];
+    let element = document.getElementById("language_select");
+    element.value = suportedLanguages.includes(lang) ? lang : suportedLanguages[0];
+    localStorage.setItem("language", element.value);
+};
+selectLanguage(localStorage.getItem("language") || navigator.language.substring(0, 2));
+const langService = new LangService();
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -55,6 +65,8 @@ const router = async () => {
 
     const view = new match.route.view(getParams(match));
     document.querySelector("#app").innerHTML = await view.getHtml();
+    langService.refreshLanguage();
+
     document.getElementById("nav-links").childNodes.forEach(ul => {
         if (ul.nodeName == "LI") {
             ul.firstChild.classList.remove("active");
@@ -79,4 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     });
     router();
+});
+
+document.querySelector("#language_select").addEventListener("change", (event) => {
+    localStorage.setItem("language", event.target.value);
+    langService.refreshLanguage();
 });

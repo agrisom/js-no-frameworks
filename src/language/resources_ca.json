@@ -1,0 +1,46 @@
+{
+    "com.thelittlepot.title.catalog": "Catàleg",
+    "com.thelittlepot.title.components": "Components",
+    "com.thelittlepot.title.course": "Curs",
+    "com.thelittlepot.title.courses": "Cursos",
+    "com.thelittlepot.title.error": "Pagina No Trobada",
+    "com.thelittlepot.title.home": "",
+    "com.thelittlepot.title.login": "Accedir",
+    "com.thelittlepot.title.signup": "Registre",
+
+    "com.thelittlepot.nav.option.coworking": "Co-Working",
+    "com.thelittlepot.nav.option.courses": "Cursos",
+    "com.thelittlepot.nav.option.tlp": "The Little Pot",
+    "com.thelittlepot.nav.option.about": "Sobre TLP",
+    "com.thelittlepot.nav.option.contact": "Contactar",
+    "com.thelittlepot.nav.option.login": "Accedir",
+    "com.thelittlepot.nav.option.signup": "Registre",
+
+    "com.thelittlepot.home.section.2.tile": "Titol de prova",
+    "com.thelittlepot.home.section.2.content": "Text de prova per a l'idioma",
+
+    "com.thelittlepot.login.tile": "Iniciar Sessió",
+    "com.thelittlepot.login.form.email": "Email",
+    "com.thelittlepot.login.form.password": "Contrasenya",
+    "com.thelittlepot.login.form.submit": "Accedir",
+    "com.thelittlepot.login.content": "Encara no tens compte? <a href='/signup' data-link>Registra't</a>",
+
+    "com.thelittlepot.signup.tile": "Registre",
+    "com.thelittlepot.signup.form.email": "Email",
+    "com.thelittlepot.signup.form.name": "Nom",
+    "com.thelittlepot.signup.form.surnames": "Cognoms",
+    "com.thelittlepot.signup.form.password": "Contrasenya",
+    "com.thelittlepot.signup.form.password2": "Repetir Contrasenya",
+    "com.thelittlepot.signup.form.submit": "Registra't",
+    "com.thelittlepot.signup.content": "Ja tens un compte? <a href='/login' data-link>Inicia sessió</a>",
+
+    "com.thelittlepot.courses.alerts": "Alertes",
+    "com.thelittlepot.courses.table.name": "Nom",
+    "com.thelittlepot.courses.table.gender": "Genere",
+    "com.thelittlepot.courses.table.age": "Edat",
+    "com.thelittlepot.courses.table.edit": "Editar",
+
+    "com.thelittlepot.error.404.title": "Ostres!!",
+    "com.thelittlepot.error.404.desc": "No hem trovat la pàgina que busques.<br><a href='/' data-link>Tornar a l'inici</a>",
+    "com.thelittlepot.error.404.code": "404 Pagina No Trobada"
+}

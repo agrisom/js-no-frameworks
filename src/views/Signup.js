@@ -5,14 +5,14 @@ export default class extends AbstractView {
         return `
             <section>
                 <div class="column column-center">
-                    <h1>Sign Up</h1>
-                    <input class="large" type="text" placeholder="Email" title="Email" name="username" />
-                    <input class="medium" type="text" placeholder="Name" title="Name" name="name" />
-                    <input class="medium" type="text" placeholder="Surnames" title="Surnames" name="surnames" />
-                    <input class="large" type="password" placeholder="Password" title="Password" name="password" />
-                    <input class="large" type="password" placeholder="Repeat Password" title="Repeat Password" name="password2" />
-                    <button class="btn btn-primary large" type="submit">Sign Up</button>
-                    <p>Already have an account? <a href="/login" data-link>Log in</a></p>
+                    <h1 class="i18nstring" data-message="com.thelittlepot.signup.tile"></h1>
+                    <input class="large i18nstring" data-message="com.thelittlepot.signup.form.email" type="text" name="username" />
+                    <input class="medium i18nstring" data-message="com.thelittlepot.signup.form.name" type="text"name="name" />
+                    <input class="medium i18nstring" data-message="com.thelittlepot.signup.form.surnames" type="text" name="surnames" />
+                    <input class="large i18nstring" data-message="com.thelittlepot.signup.form.password" type="password" name="password" />
+                    <input class="large i18nstring" data-message="com.thelittlepot.signup.form.password2" type="password" name="password2" />
+                    <button class="btn btn-primary large i18nstring" data-message="com.thelittlepot.signup.form.submit" type="submit"></button>
+                    <p class="i18nstring" data-message="com.thelittlepot.signup.content"></p>
                 </div>
             </section>
         `;
@@ -20,6 +20,6 @@ export default class extends AbstractView {
 
     constructor() {
         super();
-        this.setTitle("Log In");
+        this.setTitle("com.thelittlepot.title.signup");
     }
 }

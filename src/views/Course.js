@@ -17,7 +17,7 @@ export default class extends AbstractView {
         
         const userService = new UserService();
         userService.getById(this.params.id).then(course => {
-            this.setTitle("Course : " + course.name);
+            this.setTitle("com.thelittlepot.title.course", course.name);
             const courseContent = document.getElementById("course-content");
             courseContent.innerHTML = this.mapCourse(course);
             document.getElementById("course-name").innerHTML = course.name;

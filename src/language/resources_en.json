@@ -1,0 +1,46 @@
+{
+    "com.thelittlepot.title.catalog": "Catalog",
+    "com.thelittlepot.title.components": "Components",
+    "com.thelittlepot.title.course": "Course",
+    "com.thelittlepot.title.courses": "Courses",
+    "com.thelittlepot.title.error": "Page Not Found",
+    "com.thelittlepot.title.home": "",
+    "com.thelittlepot.title.login": "Log In",
+    "com.thelittlepot.title.signup": "Sign Up",
+
+    "com.thelittlepot.nav.option.coworking": "Co-Working",
+    "com.thelittlepot.nav.option.courses": "Courses",
+    "com.thelittlepot.nav.option.tlp": "The Little Pot",
+    "com.thelittlepot.nav.option.about": "About",
+    "com.thelittlepot.nav.option.contact": "Contact",
+    "com.thelittlepot.nav.option.login": "Log in",
+    "com.thelittlepot.nav.option.signup": "Sign up",
+
+    "com.thelittlepot.home.section.2.tile": "Test title",
+    "com.thelittlepot.home.section.2.content": "Test text for language change",
+
+    "com.thelittlepot.login.tile": "Log In",
+    "com.thelittlepot.login.form.email": "Email",
+    "com.thelittlepot.login.form.password": "Password",
+    "com.thelittlepot.login.form.submit": "Log In",
+    "com.thelittlepot.login.content": "Don't have an account? <a href='/signup' data-link>Sign up</a>",
+
+    "com.thelittlepot.signup.tile": "Sign Up",
+    "com.thelittlepot.signup.form.email": "Email",
+    "com.thelittlepot.signup.form.name": "Name",
+    "com.thelittlepot.signup.form.surnames": "Surnames",
+    "com.thelittlepot.signup.form.password": "Password",
+    "com.thelittlepot.signup.form.password2": "Repeat Password",
+    "com.thelittlepot.signup.form.submit": "Sign Up",
+    "com.thelittlepot.signup.content": "Already have an account? <a href='/login' data-link>Log in</a>",
+
+    "com.thelittlepot.courses.alerts": "Alerts",
+    "com.thelittlepot.courses.table.name": "Name",
+    "com.thelittlepot.courses.table.gender": "Gender",
+    "com.thelittlepot.courses.table.age": "Age",
+    "com.thelittlepot.courses.table.edit": "Edit",
+
+    "com.thelittlepot.error.404.title": "Oops!!",
+    "com.thelittlepot.error.404.desc": "We can't find the page you're looking for.<br><a href='/' data-link>Go back home</a>",
+    "com.thelittlepot.error.404.code": "404 Page Not Found"
+}

@@ -5,12 +5,10 @@ export default class extends AbstractView {
         return `
             <section>
                 <div class="column column-center center">
-                <h1>Oops!!</h1>
-                <p>We can't find the page you're looking for.<br><a href="/" data-link>Go back home</a></p>
-                <img alt="404" src="/assets/loop_color.gif" style="filter: grayscale(100%) brightness(138%)"/>
-                    <p>
-                        404 Page Not Found
-                    </p>
+                <h1 class="i18nstring" data-message="com.thelittlepot.error.404.title"></h1>
+                <p class="i18nstring" data-message="com.thelittlepot.error.404.desc"></p>
+                <img alt="404" src="/assets/loop_color.gif" style="filter: grayscale(100%) brightness(140%)"/>
+                    <p class="i18nstring" data-message="com.thelittlepot.error.404.code"></p>
                 </div>
             </section>
         `;
@@ -18,6 +16,6 @@ export default class extends AbstractView {
 
     constructor() {
         super();
-        this.setTitle("Page Not Found");
+        this.setTitle("com.thelittlepot.title.error");
     }
 }

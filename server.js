@@ -9,6 +9,7 @@ app.use("/components", express.static(path.resolve(__dirname, "src", "components
 app.use("/css", express.static(path.resolve(__dirname, "src", "css")));
 app.use("/js", express.static(path.resolve(__dirname, "src", "js")));
 app.use("/views", express.static(path.resolve(__dirname, "src", "views")));
+app.use("/language", express.static(path.resolve(__dirname, "src", "language")));
 
 app.get("/*", (req, res) => {
     res.sendFile(path.resolve("src", "index.html"));

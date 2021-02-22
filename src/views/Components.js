@@ -56,6 +56,6 @@ export default class extends AbstractView {
 
     constructor() {
         super();
-        this.setTitle("Home");
+        this.setTitle("com.thelittlepot.title.components");
     }
 }
